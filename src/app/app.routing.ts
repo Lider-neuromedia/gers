@@ -21,6 +21,7 @@ import { PoliticaGestionIntegralComponent } from './colombia/nosotros/politica-g
 import { AcuerdosInternacionalesComponent } from './colombia/acuerdos-internacionales/acuerdos-internacionales.component';
 import { TrabajeConNosotrosComponent } from './colombia/trabaje-con-nosotros/trabaje-con-nosotros.component';
 import { VacanteInternaComponent } from './colombia/vacante-interna/vacante-interna.component';
+import { PublicacionesComponent } from './colombia/publicaciones/publicaciones.component';
 import {DetalleProductoComponent} from "./colombia/productos/detalle-producto/detalle-producto.component";
 import {ProductoComponent} from "./colombia/productos/producto/producto.component";
 
@@ -49,6 +50,7 @@ const APP_ROUTES: Routes = [
     {path: 'acuerdos-internacionales', component: AcuerdosInternacionalesComponent},
     {path: 'trabaje-con-nosotros', component: TrabajeConNosotrosComponent},
     {path: 'vacante-interna', component: VacanteInternaComponent},
+    {path: 'publicaciones', component: PublicacionesComponent},
     {path: 'pruebas-automatizacion-y-control', component: PruebasAutomatizacionControlComponent},
     {path: '**', pathMatch: 'full', redirectTo: ''}
 ];

@@ -30,6 +30,10 @@ small {
     width: 10px !important;
 }
 
+.size12 {
+    font-size: 12px;
+}
+
 .size13 {
     font-size: 13px;
 }
@@ -56,6 +60,10 @@ small {
 
 .size22 {
     font-size: 22px;
+}
+
+.size24 {
+    font-size: 24px;
 }
 
 .size25 {
@@ -1880,3 +1888,16 @@ box-shadow: 17px 25px 0px 0px rgba(44,51,148,1);
     border-top: 2px solid #cecece;
 }
 
+/***** Publicaciones ******/
+.card-publication a:hover{
+    color: #44C0FE;
+}
+
+.card-publication a:hover h3{
+    color: #44C0FE;
+}
+
+.card-publication:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
