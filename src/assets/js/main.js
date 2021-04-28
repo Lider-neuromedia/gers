@@ -182,6 +182,7 @@ $(document).ready(function() {
         btnAbrirCurri.click((e) => {
             $('.overviwe-curriculum').toggleClass('open-overviwe-curriculum');
             $('#curriculum-sidebar').toggleClass('switch-curriculum');
+            console.log("Presionaste el botón de abrir");
             e.preventDefault();
         });
 
@@ -199,3 +200,9 @@ $(document).ready(function() {
             e.preventDefault();
         });
 });
+
+$(document).ready(function () {
+    $(".input-wrapper").click(function (e) {
+      console.log("Presionó");
+    });
+  });

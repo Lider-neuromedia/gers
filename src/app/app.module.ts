@@ -43,6 +43,7 @@ import { EnviarCurriculumComponent } from './colombia/enviar-curriculum/enviar-c
 import { EnviarHojaComponent } from './enviar-hoja/enviar-hoja.component';
 import { VacanteInternaComponent } from './colombia/vacante-interna/vacante-interna.component';
 import { PublicacionesComponent } from './colombia/publicaciones/publicaciones.component';
+import { PublicacionInternaComponent } from './colombia/publicaciones/publicacion-interna/publicacion-interna.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { PublicacionesComponent } from './colombia/publicaciones/publicaciones.c
     EnviarHojaComponent,
     VacanteInternaComponent,
     PublicacionesComponent,
+    PublicacionInternaComponent,
   ],
   imports: [
     BrowserModule,

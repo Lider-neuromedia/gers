@@ -1,18 +1,15 @@
 <!--Aquí Inicia el Menú Principal Grande-->
-<nav class="navbar navbar-expand-md menuPrincipal" #stickyMenu [class.sticky]="sticky">
+<nav class="navbar navbar-expand-md navbar-light menuPrincipal" #stickyMenu [class.sticky]="sticky">
     <div class="container">
-        <div class="navbar-header">
+        <button class="navbar-toggler mt-1 mb-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
             <a class="navbar-brand" href="#">
-                <img src="assets/images/carousel-principal/logo_1981png.png" width="190" height="auto" alt="Logo">
+                <img class="LogoPrincipal" src="assets/images/carousel-principal/logo_1981png.png" alt="Logo">
             </a>
             <a class="menuVerticalPrincipal solicitarMenuLateral" href="#"><span class="lineasMenu">&#9776;</span> Menú</a>
-        </div>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-	        <span class="navbar-toggler-icon"></span>
-	    </button>
-
-        <div class="collapse navbar-collapse " id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown has-megamenu">
                     <a class="nav-link dropdown-toggle size14" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			          Servicios
@@ -189,73 +186,75 @@
                   Productos
                 </a>
                 <div class="dropdown-menu menuproductos megamenu navbar-center animate fade-up">
-                  <div class="row filaRepresentaciones">
-                    <div class="col-md-4 representacionItem">
-                      <a routerLink="/productos">
-                        <img class="imagenMarcaMenu" src="assets/images/marcas/4beck_marca.png" alt="Logo Beck">
-                      </a>
+                  <div class="container">
+                    <div class="row filaRepresentaciones">
+                      <div class="col-md-4 representacionItem">
+                        <a routerLink="/productos">
+                          <img class="imagenMarcaMenu img-fluid" src="assets/images/marcas/4beck_marca.png" alt="Logo Beck">
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['beckwith-electronic']">
+                          <p class="textoItemMarcaMenu">Analizadores de Calidad de Energía</p>
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['xgslab']">
+                          <p class="textoItemMarcaMenu">Instalación fija</p>
+                        </a>
+                      </div>
                     </div>
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['beckwith-electronic']">
-                        <p class="textoItemMarcaMenu">Analizadores de Calidad de Energía</p>
-                      </a>
+                    <div class="row filaRepresentaciones">
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['dranetz']">
+                          <img class="imagenMarcaMenu img-fluid" src="assets/images/marcas/2dranetz_marca.png" alt="Logo Dranetz">
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['ndb']">
+                          <p class="textoItemMarcaMenu">Medidores de Energía</p>
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a href="#">
+                          <p class="textoItemMarcaMenu">Portatiles</p>
+                        </a>
+                      </div>
                     </div>
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['xgslab']">
-                        <p class="textoItemMarcaMenu">Instalación fija</p>
-                      </a>
+                    <div class="row filaRepresentaciones">
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['dranetz']">
+                          <img class="imagenMarcaMenu img-fluid" src="assets/images/marcas/5Ndb_marca.png" alt="Logo NDB">
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['ndb']">
+                          <p class="textoItemMarcaMenu">Registradores de datos</p>
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a href="#">
+                          <p class="textoItemMarcaMenu"></p>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row filaRepresentaciones">
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['dranetz']">
-                        <img class="imagenMarcaMenu" src="assets/images/marcas/2dranetz_marca.png" alt="Logo Dranetz">
-                      </a>
-                    </div>
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['ndb']">
-                        <p class="textoItemMarcaMenu">Medidores de Energía</p>
-                      </a>
-                    </div>
-                    <div class="col-md-4 representacionItem">
-                      <a href="#">
-                        <p class="textoItemMarcaMenu">Portatiles</p>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row filaRepresentaciones">
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['dranetz']">
-                        <img class="imagenMarcaMenu" src="assets/images/marcas/5Ndb_marca.png" alt="Logo NDB">
-                      </a>
-                    </div>
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['ndb']">
-                        <p class="textoItemMarcaMenu">Registradores de datos</p>
-                      </a>
-                    </div>
-                    <div class="col-md-4 representacionItem">
-                      <a href="#">
-                        <p class="textoItemMarcaMenu"></p>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row filaRepresentaciones">
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['dranetz']">
-                        <img class="imagenMarcaMenu" src="assets/images/marcas/6GMC_marca.png" alt="Logo 6GMC">
-                      </a>
-                    </div>
-                    <div class="col-md-4 representacionItem">
-                      <a [routerLink]="['ndb']">
-                        <p class="textoItemMarcaMenu">Software de Gestión </p>
-                      </a>
-                    </div>
-                    <div class="col-md-4 representacionItem">
-                      <a href="#">
+                    <div class="row filaRepresentaciones">
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['dranetz']">
+                          <img class="imagenMarcaMenu img-fluid" src="assets/images/marcas/6GMC_marca.png" alt="Logo 6GMC">
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a [routerLink]="['ndb']">
+                          <p class="textoItemMarcaMenu">Software de Gestión </p>
+                        </a>
+                      </div>
+                      <div class="col-md-4 representacionItem">
+                        <a href="#">
 
-                        <p class="textoItemMarcaMenu"></p>
-                      </a>
+                          <p class="textoItemMarcaMenu"></p>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -267,9 +266,8 @@
                      height="auto">
               </a></li>-->
 
-              <li class="nav-item dropdown has-megamenu animate fade-up"  >
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" (click)="mostrarProductos(1)"  role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item"  >
+              <a class="nav-link nav-link" href="#" (click)="mostrarProductos(1)"  role="button" >
                   <span class="cantidad-producto">{{cantidadCarrito? cantidadCarrito: 0}}</span>
                   <img src="assets/images/carousel-principal/Shopping-cartpng.png"  alt="Icono Tienda" width="23"
                        height="auto">
@@ -279,8 +277,13 @@
 
                 </div>-->
               </li>
-              <li class="nav-item"><a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a></li>
-            </div>
+              
+              <li class="nav-item">
+                <div class="input-wrapper">
+                  <input class="main-menu-search" type="text" name="search" placeholder="">
+                </div>
+              </li>
+            </ul>
         </div>
     </div>
 </nav>

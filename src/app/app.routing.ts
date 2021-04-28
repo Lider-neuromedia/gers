@@ -22,6 +22,7 @@ import { AcuerdosInternacionalesComponent } from './colombia/acuerdos-internacio
 import { TrabajeConNosotrosComponent } from './colombia/trabaje-con-nosotros/trabaje-con-nosotros.component';
 import { VacanteInternaComponent } from './colombia/vacante-interna/vacante-interna.component';
 import { PublicacionesComponent } from './colombia/publicaciones/publicaciones.component';
+import { PublicacionInternaComponent } from './colombia/publicaciones/publicacion-interna/publicacion-interna.component';
 import {DetalleProductoComponent} from "./colombia/productos/detalle-producto/detalle-producto.component";
 import {ProductoComponent} from "./colombia/productos/producto/producto.component";
 
@@ -51,6 +52,7 @@ const APP_ROUTES: Routes = [
     {path: 'trabaje-con-nosotros', component: TrabajeConNosotrosComponent},
     {path: 'vacante-interna', component: VacanteInternaComponent},
     {path: 'publicaciones', component: PublicacionesComponent},
+    {path: 'publicacion-interna', component: PublicacionInternaComponent},
     {path: 'pruebas-automatizacion-y-control', component: PruebasAutomatizacionControlComponent},
     {path: '**', pathMatch: 'full', redirectTo: ''}
 ];

@@ -89,25 +89,29 @@ small {
     letter-spacing: 2.28px;
 }
 
+.letter-spacing-0-05{
+    letter-spacing: 0.05px;   
+}
+
 .font-weight-300{
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 .font-weight-500{
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 .font-weight-600{
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 .font-weight-900{
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .text-blue1 {
-    color: #2C3394;
+    color: #2C3394 !important;
 }
 
 .text-blue2{
-    color: #0030A8;
+    color: #0030A8 !important;
 }
 
 .text-blue3 {
@@ -118,16 +122,24 @@ small {
     color: #D0D1E7;
 }
 
+.text-gray2{
+    color: #8F9AA2 !important;
+}
+
 .text-gray-dark{
     color:#8D8D8D;
 }
 
 .text-black{
-    color: #343434;
+    color: #343434 !important;
 }
 
 .text-white{
     color:#fff;
+}
+
+.border-radius-0{
+    border-radius: 0 !important;
 }
 
 .pl-100 {
@@ -140,12 +152,24 @@ small {
     margin-top: 100px;
 }
 
+.mtn-130{
+    margin-top: -130px;
+}
+
 .mbn-110 {
     margin-bottom: 110px;
 }
 
 .bg-blue1 {
     background: #2C3394;
+}
+
+.bg-blue2{
+    background: #0089FF !important;
+}
+
+.bg-gray{
+    background-color: #F9F9F9;
 }
 
 .bg-gray-light {
@@ -194,6 +218,31 @@ small {
     box-shadow: 0px 0px 11px 2px rgba(0, 137, 255, .5);
     transition: .3s;
     border: 1px solid #0089FF;
+}
+
+.btn-dark-blue{
+    background: #2C3394;
+    color: #fff;
+    border: 1px solid #2C3394;
+    transition: .5s;
+}
+.btn-dark-blue:hover{
+    background: #fff;
+    color: #2C3394;
+    border: 1px solid #2C3394;
+}
+
+.btn-dark-blue-outline{
+    background: #fff;
+    color: #2C3394;
+    border: 1px solid #2C3394;
+    transition: .5s;
+}
+
+.btn-dark-blue-outline:hover{
+    background: #2C3394;
+    color: #fff;
+    border: 1px solid #2C3394;
 }
 
 .btn-blue {
@@ -249,7 +298,6 @@ small {
 
 .topBarAzul {
     background-color: #2C3394;
-    height: 45px;
 }
 
 .topBarAzul .nav-item a.nav-link {
@@ -326,6 +374,13 @@ small {
 
 
 /***Sedes***/
+
+.menuCorporacionItemSedes .pais{
+    padding: 0px;
+}
+.menuCorporacionItemSedes .pais .textoPais{
+    padding-top: 0;
+}
 
 .pais {
     padding: 3px 20px;
@@ -413,6 +468,14 @@ small {
     cursor: not-allowed;
 }
 
+.topBarAzul .navbar-nav .active>.nav-link, .topBarAzul .navbar-nav .nav-link.active, .topBarAzul .navbar-nav .nav-link.show, .topBarAzul .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.menuPrincipal .navbar-nav .active>.nav-link, .menuPrincipal .navbar-nav .nav-link.active, .menuPrincipal .navbar-nav .nav-link.show, .menuPrincipal .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.5);
+}
+
 .primeraCiudad {
     margin-top: 1rem;
 }
@@ -453,7 +516,7 @@ li.item-menu-sedes {
     border-right: 1px solid #D8D8D8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .megamenu-full-with {
         margin-left: 0;
         margin-right: 0;
@@ -467,6 +530,147 @@ li.item-menu-sedes {
     .dropdown-header-ciudad {
         padding: 3px 15px !important;
     }
+    .mtn-130{
+        margin-top: 0;
+    }
+    .LogoPrincipal{
+        width:120px !important;
+    }
+    .topBarAzul .navbar-toggler{
+        margin-top: -4px;
+    }
+    #navbarTopBar .navbar-nav .dropdown-menu {
+        width: 100%;
+    }
+    .img-pensamiento-corporativo{
+        position:relative;
+    }
+    .size26 {
+        font-size: 20px;
+    }
+    .pilares .col{
+        min-width: 100%;
+    }
+    .logoFooter {
+        position: relative !important;
+        top: 0% !important;
+    }
+    .contenedorFooter .contacto2 .listaItemsFooter {
+        padding-inline-start: 0;
+    }
+    .contenedorFooter .contacto3 .redesFooter img {
+        width: 25%;
+    }
+    .contenedorFooter .contacto4 .certificados img {
+        width: 33%;
+    }
+    .menuNosotros .col-megamenu ul li.liMenuNosotros {
+        padding: 10px 10px;
+    }    
+    .bg-none{
+        background-image: none!important;
+    }
+    .col-formulario {
+        position: relative!important;
+    }
+    .info-paises .mt-150{
+        margin-top: 30px;
+    }
+    .contactenos .pb-150{
+        padding-bottom: 30px;
+    }
+    .contactenos .pt-150{
+        padding-top: 30px;
+    }
+    .liMenuIniciarSesion {
+        border-right: none !important;
+    }
+    .menuPrincipal #navbarSupportedContent{
+        width: 100%;
+    }
+    .menuRepresentaciones {
+        width: 100% !important;
+    }
+    .diseno-ingenieria .pl-100{
+        padding-left: 15px;
+    }
+    .img-diseno-ing{
+        position:relative;
+    }
+    .diseno-ingenieria .mbn-110 {
+        margin-bottom: 10px;
+    }
+    .servicios-energeticos .pr-100{
+        padding-right: 15px;
+    }
+    .servicios-energeticos .mbn-110{
+        margin-bottom: 10px;
+    }
+    .interventorias-asesorias .pl-100{
+        padding-left: 10px;
+    }
+    .interventorias-asesorias .bg-blue1.mtn-40{
+        margin-top:0px
+    }
+    .tabs-marcas.tabs-estudios-page .nav.nav-tabs li{
+        width: 100%;
+    }
+    .pagina-proyectos .tarjetaProyectosInterior:hover .tituloTarjetaProyectos {
+        bottom: 120px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .topBarAzul {
+        height: 45px;
+    }
+    .img-pensamiento-corporativo{
+        position:absolute;
+    }
+    .menuIniciarSesion {
+        min-width: 700px !important;
+    }
+    .dropdown-menu.menuServicio {
+        min-width: 50rem !important;
+    }
+    .navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-43%);
+    }
+    .img-diseno-ing{
+        position:absolute;
+    }
+    .interventorias-asesorias .bg-blue1.mtn-40{
+        margin-top:-40px
+    }
+    .smart-grid .img-back-smartgrid{
+        background:url("assets/images/servicios/img-smart-grids.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        padding-right: 50px;
+    }
+    .diseno-ingenieria .img-back-diseno-ingenieria{
+        background:url("assets/images/servicios/diseno-ingeneria.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        padding-right: 50px;
+    }
+    .estudios-sistemas .img-back-estudios-sistemas{
+        background:url("assets/images/servicios/img-smart-grids.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        padding-right: 50px;
+    }
+    section.planeacion-proyectos .mt-bg-blue1{
+        margin-top: -50px;
+    }
+    .main{
+        margin: 0 auto;
+        overflow:hidden;
+        position: relative;
+        height: 400px;
+    }
 }
 
 
@@ -476,7 +680,6 @@ li.item-menu-sedes {
 /******Registrarse/Iniciar sesión*****/
 
 .menuIniciarSesion {
-    min-width: 700px !important;
     padding: 40px !important;
     top: 95% !important;
     background-color: #E8ECF4 !important;
@@ -557,6 +760,10 @@ li.item-menu-sedes {
 
 /*******Menú Principal*******/
 
+.LogoPrincipal{
+    width:190px;
+    height: auto;
+}
 .menuPrincipal {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -564,16 +771,55 @@ li.item-menu-sedes {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
 }
 
+.main-menu-search{
+    margin-top: 22px;
+}
+
+.main-menu-search[type=text] {
+    width: 30px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 14px;
+    background-color: #E8ECF4;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left: .5rem;
+    box-shadow: inset 0 1px 3px 0 rgba(131, 131, 131, 0.2);
+  }
+  
+.main-menu-search[type=text]:focus {
+    width: 120px;
+  }
+
+.input-wrapper {
+    display:inline-block;
+    position: relative
+}
+.input-wrapper:after {
+    font-family: 'FontAwesome';
+    content: '\f002';
+    position: absolute;
+    right: 6px;
+    top: 22px;
+    color:#2C3394;
+}
+
+.content-empty{
+    content:'';
+}
+
+
 .menuPrincipal li a.nav-link {
     letter-spacing: 0.84px;
     font-size: 14px;
     padding: 25px 1rem;
-    color: #2C3394;
+    color: #2C3394 !important;
 }
 
 .menuPrincipal li a.nav-link:hover {
     background-color: #0089FF;
-    color: #fff;
+    color: #fff !important;
 }
 
 .menuPrincipal li a.tienda:hover {
@@ -620,15 +866,15 @@ li.item-menu-sedes {
     background: #fff;
     overflow: scroll;
     position: fixed;
-    width: 24%;
+    width: 40%;
     top: 0;
-    left: 0;
+    right: 0;
     bottom: 0;
     /*padding: 3em;*/
     z-index: 100;
     height: 100vh;
     min-height: 100vh;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all .5s;
 }
 
@@ -666,7 +912,7 @@ li.item-menu-sedes {
 .open-overviwe {
     background: rgba(0, 0, 0, .5);
     display: block;
-    z-index: 10;
+    z-index: 99;
 }
 
 .clase-overviwe {
@@ -758,8 +1004,7 @@ li.item-menu-sedes {
 .footerVertical {
     position: sticky;
     bottom: 0;
-    padding-top: 20px;
-    padding: 15px 20px;
+    padding: 15px 30px;
     background-color: #fff;
 }
 
@@ -862,7 +1107,7 @@ li.item-menu-sedes {
 
 .headerVertical .cerrarModal {
     padding: 0;
-    margin: -1.3rem -1rem -1rem auto;
+    margin: -1.3rem 0rem -1rem auto;
     background-color: transparent;
     border: none;
     outline: none;
@@ -1116,7 +1361,7 @@ li.item-menu-sedes {
 
 @media screen and (max-width: 900px) {
     .menuvertical {
-        width: 90%;
+        width: 85%;
     }
 }
 
@@ -1124,7 +1369,6 @@ li.item-menu-sedes {
 /****************************************/
 
 .dropdown-menu.menuServicio {
-    min-width: 50rem !important;
     padding: 0px !important;
     top: 95% !important;
 }
@@ -1181,12 +1425,6 @@ p.textoItemMenu {
     border: none !important;
     padding: 0 !important;
     border-radius: 0 !important;
-}
-
-.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-43%);
 }
 
 .representacionItem {
@@ -1406,6 +1644,12 @@ p.textoItemMenu {
 
 /**********************Título de galería de marcas************/
 
+/***** Proyectos *****/
+.pagina-proyectos .tarjetaProyectosInterior:hover .tituloTarjetaProyectos {
+    bottom: 85px;
+    transition: 1s;
+    cursor: pointer;
+}
 
 /***********Imágenes full Cuatro Sedes*************/
 
@@ -1677,7 +1921,7 @@ p.textoItemMenu {
 .contenedorFooter .contacto3 p {
     color: #2C3394;
     letter-spacing: 0.84px;
-    line-height: 17.07px;
+    line-height: 20px;
 }
 
 .contenedorFooter .contacto3 .sedeFooter a {
@@ -1781,7 +2025,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-control{
-    color: #0030A8 !important;
+    color: #0030A8;
     font-weight: 500;
 }
 
@@ -1847,9 +2091,9 @@ box-shadow: 17px 25px 0px 0px rgba(44,51,148,1);
   .boxFile {
       display: inline-block;
     width: 100%;
-    border: 1px solid grey;
-    background: #fff;
-    color: grey;
+    border: 1px solid #0089FF;
+    background: #0089FF;
+    color: #fff;
     padding: 10px;
     text-align: center;
     font-weight: 500;
@@ -1859,8 +2103,8 @@ box-shadow: 17px 25px 0px 0px rgba(44,51,148,1);
   }
   .boxFile:hover {
       cursor: pointer;
-      background: grey;
-      color: #fff;
+      background: #fff;
+      color: #0089FF;
   }
   .boxFile i {
       display: block;
@@ -1901,3 +2145,15 @@ box-shadow: 17px 25px 0px 0px rgba(44,51,148,1);
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
     transition: .4s;
 }
+
+.main .img{
+    position:absolute;
+}
+
+/******* Ventana Enviar Curriculum ********/
+.shadow-inputs:hover{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+    

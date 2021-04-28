@@ -21,11 +21,6 @@
   transform: translatex(-43%) !important;
 }
 
-  .menuproductos  .col-md-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 23.333333%;
-  }
 .fila-carrito:hover {
   background-color: #F3F3F3;
 }
